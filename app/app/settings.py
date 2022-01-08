@@ -11,10 +11,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = "dt=+5q03jddlofd7^oc_s**2*a)vvlw6h#f%8!u0d6&^v7xu&_"
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# SECURITY WARNING: don"t run with debug turned on in production!
+DEBUG = False if os.environ.get("DEBUG", False) == "False" else True
+PROD = not DEBUG
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "161.35.198.20"]
+
 
 # Application definition
 

@@ -12,7 +12,6 @@ services:
       - /var/run/docker.sock:/tmp/docker.sock:ro
       - ./_nginx/vhost/:/etc/nginx/vhost.d:ro
       - ./_nginx/conf.d/client_max_body_size.conf:/etc/nginx/conf.d/client_max_body_size.conf:ro
-      - ./_nginx/certs/:/etc/nginx/certs
       - ./app/static:/code/static
       - ./app/media:/code/media
 
@@ -28,12 +27,12 @@ services:
       - LC_ALL=C.UTF-8   
 
   web: &web
-    container_name: web
+    container_name: app
     build: .
     restart: "always"
     env_file: .env
     environment:
-      - VIRTUAL_HOST=104.248.140.187
+      - VIRTUAL_HOST=161.35.198.20
       - VIRTUAL_PORT=8015
       - HTTP_PORT=8015
       - DEBUG=False

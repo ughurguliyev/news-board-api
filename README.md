@@ -18,4 +18,3 @@
 ### Repositories
 - Every db related actions are stored in the repositories. 
 - Do not use querysets and db related actions outside of the repositories.
-# news-board-api
