@@ -2,6 +2,7 @@ from stories import Success, Failure, Result, story, arguments
 
 
 class DeletePost:
+    """ Delete News Post Usecase """
     @story
     @arguments("post_id")
     def apply(I):

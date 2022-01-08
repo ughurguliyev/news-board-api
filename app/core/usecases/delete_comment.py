@@ -2,6 +2,7 @@ from stories import Success, Failure, Result, story, arguments
 
 
 class DeleteComment:
+    """ Delete Comment Usecase """
     @story
     @arguments("comment_id")
     def apply(I):

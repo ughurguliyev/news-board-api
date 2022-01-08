@@ -2,6 +2,7 @@ from stories import Success, Failure, Result, story, arguments
 
 
 class UpdateComment:
+    """ Update Comment Usecase """
     @story
     @arguments("comment_id", "args")
     def apply(I):
