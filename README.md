@@ -40,8 +40,9 @@ $ python3 manage.py runserver
 - Every db related actions are stored in the repository. 
 - Do not use querysets and db related actions outside of the repository.
 
-## Postman Documentation
-- https://documenter.getpostman.com/view/17377284/UVXerdT7
+## Postman Documentation and Collection
+- https://documenter.getpostman.com/view/17377284/UVXerdT7 (Documentation)
+- https://www.postman.com/grey-crescent-804077/workspace/news-board-api/collection/17377284-1ce2152c-e57a-4ec8-b38d-e9ce6d0ef5b5?ctx=documentation (Collection)
 
 ## Extra infos
 - Deployed project url: http://161.35.198.20/
