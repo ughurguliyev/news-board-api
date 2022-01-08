@@ -2,7 +2,8 @@ from stories import Success, Failure, Result, story, arguments
 
 
 class CreateComment:
-    """ Create Comment Usecase """
+    """Create Comment Usecase"""
+
     @story
     @arguments("post_id", "author_name", "content")
     def apply(I):

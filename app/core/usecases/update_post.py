@@ -2,7 +2,8 @@ from stories import Success, Failure, Result, story, arguments
 
 
 class UpdatePost:
-    """ Update News Post Usecase """
+    """Update News Post Usecase"""
+
     @story
     @arguments("post_id", "args")
     def apply(I):

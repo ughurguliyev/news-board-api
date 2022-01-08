@@ -2,7 +2,8 @@ from stories import Success, Failure, Result, story, arguments
 
 
 class CreatePost:
-    """ Create News Post Usecase """
+    """Create News Post Usecase"""
+
     @story
     @arguments("title", "link", "amount_of_upvotes", "author_name")
     def apply(I):
