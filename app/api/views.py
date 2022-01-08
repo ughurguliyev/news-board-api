@@ -90,7 +90,7 @@ class RetrieveUpdateDestroyNewsPostAPIView(RetrieveUpdateDestroyAPIView):
         if r.is_success:
             success = True
             stat = status.HTTP_200_OK
-            result = self.serializer_class(r.value).data
+            result = "Deleted"
 
         elif r.failed_because("post_id_required"):
             result = "Post ID is required."
@@ -182,7 +182,7 @@ class RetrieveUpdateDestroyCommentAPIView(RetrieveUpdateDestroyAPIView):
         if r.is_success:
             success = True
             stat = status.HTTP_200_OK
-            result = self.serializer_class(r.value).data
+            result = "Deleted"
 
         elif r.failed_because("comment_id_required"):
             result = "Comment ID is required."
