@@ -34,6 +34,7 @@ $ python3 manage.py runserver
 - Every business logic lives under the usecases folders.
 - You can simply understand the purpose of the specific usecase by looking its name or description in the class.
 - Usecases implemented using profit404/stories ("https://github.com/proofit404/stories") library.
+- Celery & Redis used to reset upvote count daily at 00:00 asynchronously.
 
 ### Repositories
 - Every db related actions are stored in the repository. 
