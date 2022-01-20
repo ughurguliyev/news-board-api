@@ -8,5 +8,5 @@ news_repo = NewsRepository()
 
 @app.task
 def reset_post_upvotes_count():
-    updated_posts = news_repo.reset_upvote_counts()
+    updated_posts = news_repo.reset_upvotes_count()
     return updated_posts
